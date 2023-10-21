@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Secret-key</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <p id="toast"></p>
+        <h1>SECRET KEY</h1>
+        <div class="input-container">
+          <label for="step">Length</label>
+          <div>
+            <input
+              id="step"
+              type="number"
+              minlength="4"
+              maxlength="30"
+              value="8"
+            />
+            <button id="reset" type="button">Reset</button>
+          </div>
+          <label for="key">Key</label>
+          <div>
+            <input id="key" type="text" readonly />
+            <button id="copy" type="button">Copy</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>
