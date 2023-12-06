@@ -11,21 +11,26 @@
       <div class="container">
         <p id="toast"></p>
         <h1>SECRET KEY</h1>
-        <div class="input-container">
-          <label for="step">Length</label>
-          <div>
-            <input
+        <div class="block">
+          <div class="input-container">
+            <div>
+              <label for="step">Length</label>
+              <input
+              class="range"
               id="step"
-              type="number"
-              minlength="4"
-              maxlength="30"
+              type="range"
+              min="4"
+              max="30"
               value="10"
-            />
-            <button id="reset" type="button">Reset</button>
+              />
+            </div>
+            <div>
+              <label for="key">Key</label>
+              <input id="key" type="text" readonly />
+            </div>
           </div>
-          <label for="key">Key</label>
-          <div>
-            <input id="key" type="text" readonly />
+          <div class="btn-section">
+            <button id="reset" type="button">Reset</button>
             <button id="copy" type="button">Copy</button>
           </div>
         </div>
